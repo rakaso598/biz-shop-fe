@@ -1,12 +1,11 @@
-# React + Vite
+### 목표 : 동명의 프로젝트 백엔드에 연결하기
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### vite + react + js 로 만들어진 프론트엔드 프로젝트.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### index.api.js : 클라이언트 생성
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Axios를 사용해 백엔드 서버에 요청을 보냄.
