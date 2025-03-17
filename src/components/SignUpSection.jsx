@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import api from "../api/index.api";
 
 function SignUpSection() {
   const [email, setEmail] = useState("");
@@ -8,7 +9,10 @@ function SignUpSection() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(email, name, password);
+    const data = { email, name, password };
+    const result = api.users.signUp(data);
+
+    console.log(result);
   };
 
   return (
