@@ -6,11 +6,11 @@ function SignUpSection() {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const data = { email, name, password };
-    const result = api.users.signUp(data);
+    const result = await api.users.sighUp(data);
 
     console.log(result);
   };
