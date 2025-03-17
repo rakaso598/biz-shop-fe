@@ -1,8 +1,8 @@
-#![화면 캡처 2025-03-17 190731](https://github.com/user-attachments/assets/a431cef4-98bc-423b-a61b-0e17d6dee32a)
-
 ## 목표 : `rdbms-e-shop-be` 저장소 백엔드에 연결하기
 
 ### vite + react + js 로 만들어진 프론트엔드 프로젝트.
+
+![화면 캡처 2025-03-17 190731](https://github.com/user-attachments/assets/a431cef4-98bc-423b-a61b-0e17d6dee32a)
 
 ---
 
