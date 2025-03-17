@@ -1,4 +1,5 @@
 import LogInSection from "./components/LogInSection";
+import ProductsSection from "./components/ProductsSection";
 import SignUpSection from "./components/SignUpSection";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <SignUpSection />
       <LogInSection />
+      <ProductsSection />
     </>
   );
 }

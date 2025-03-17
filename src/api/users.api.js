@@ -16,6 +16,8 @@ const logIn = async (data) => {
     const response = client.post("/users/sign-up", data);
     const result = response.data;
 
+    client.defaults.headers.Authorization = `Basic ${result}`;
+
     return result;
   } catch (e) {
     console.error(e);

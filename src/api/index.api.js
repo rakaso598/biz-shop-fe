@@ -1,3 +1,4 @@
+import productsAPI from "./products.api";
 import usersAPI from "./users.api";
 import axios from "axios";
 
@@ -6,6 +7,7 @@ export const client = axios.create({ baseURL });
 
 const api = {
   users: usersAPI,
+  products: productsAPI,
 };
 
 export default api;

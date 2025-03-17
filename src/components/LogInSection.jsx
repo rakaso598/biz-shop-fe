@@ -10,7 +10,7 @@ function LogInSection() {
     e.preventDefault();
 
     const data = { email, name, password };
-    const result = await api.users.sighUp(data);
+    const result = await api.users.logIn(data);
 
     console.log(result);
   };
