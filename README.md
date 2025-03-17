@@ -1,4 +1,4 @@
-### 목표 : `rdbms-orm-e-shop` 저장소 백엔드에 연결하기
+### 목표 : `rdbms-e-shop-be` 저장소 백엔드에 연결하기
 
 ### vite + react + js 로 만들어진 프론트엔드 프로젝트.
 
@@ -10,7 +10,9 @@
 
 ---
 
-#### index.api.js : `baseURL`로 `{ clinet }` 셍성, `users.api.js`에서 받아서 사용
+#### `index.api.js` : `baseURL`로 `{ clinet }` 셍성, `users.api.js`에서 받아서 사용
+
+#### `users.api.js` : `client.post("/users/sign-up", data)` 포함, `client` 객체를 사용하여 요청 보냄.
 
 #### SignUpSection.jsx : `회원가입 폼`, `CORS`에러를 처음 만나는 페이지.
 
