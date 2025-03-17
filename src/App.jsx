@@ -1,5 +1,7 @@
+import SignUpSection from "./components/SignUpSection";
+
 function App() {
-  return "Hello";
+  return <SignUpSection />;
 }
 
 export default App;
