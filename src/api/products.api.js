@@ -7,6 +7,20 @@ const getAllProducts = async () => {
   return result;
 };
 
-const productsAPI = { getAllProducts };
+const likeProduct = async (productId) => {
+  const response = await client.put("/products/${}/like");
+  const result = response.data;
+
+  return result;
+};
+
+const unlikeProduct = async (productId) => {
+  const response = await client.put("/products/${}/like");
+  const result = response.data;
+
+  return result;
+};
+
+const productsAPI = { getAllProducts, likeProduct, unlikeProduct };
 
 export default productsAPI;

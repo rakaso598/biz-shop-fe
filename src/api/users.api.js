@@ -24,9 +24,21 @@ const logIn = async (data) => {
   }
 };
 
+const getFavoriteProducts = async () => {
+  try {
+    const response = await client.get("/users/favorite-products");
+    const result = response.data;
+
+    return result;
+  } catch (e) {
+    console.error(e);
+  }
+};
+
 const usersAPI = {
   sighUp,
   logIn,
+  getFavoriteProducts,
 };
 
 export default usersAPI;
