@@ -10,7 +10,7 @@ function SignUpSection() {
     e.preventDefault();
 
     const data = { email, name, password };
-    const result = await api.users.sighUp(data);
+    const result = await api.users.signUp(data);
 
     console.log(result);
   };
@@ -22,20 +22,20 @@ function SignUpSection() {
         <input
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          type="text"
-          placeholder="이메일 입력해 주세요"
+          type="email"
+          placeholder="이메일을 입력해 주세요"
         />
         <input
           value={name}
           onChange={(e) => setName(e.target.value)}
           type="text"
-          placeholder="이름 입력해 주세요"
+          placeholder="이름을 입력해 주세요"
         />
         <input
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           type="password"
-          placeholder="비밀번호 입력해 주세요"
+          placeholder="비밀번호를 입력해 주세요"
         />
         <button>가입하기</button>
       </form>

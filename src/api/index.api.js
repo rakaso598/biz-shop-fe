@@ -1,6 +1,6 @@
+import axios from "axios";
 import productsAPI from "./products.api";
 import usersAPI from "./users.api";
-import axios from "axios";
 
 const baseURL = "http://localhost:5555";
 export const client = axios.create({ baseURL });
