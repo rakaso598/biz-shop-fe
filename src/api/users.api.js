@@ -11,8 +11,20 @@ const sighUp = async (data) => {
   }
 };
 
+const logIn = async (data) => {
+  try {
+    const response = client.post("/users/sign-up", data);
+    const result = response.data;
+
+    return result;
+  } catch (e) {
+    console.error(e);
+  }
+};
+
 const usersAPI = {
   sighUp,
+  logIn,
 };
 
 export default usersAPI;
